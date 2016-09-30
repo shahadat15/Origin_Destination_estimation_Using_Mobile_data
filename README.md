@@ -1,5 +1,7 @@
 # Origin_Destination_estimation_Using_Mobile_data
-Perl langulage has been used to remove the string ID from the raw data./
+Perl langulage has been used to remove the string ID from the raw data.
+
+Database has been used to sort, filter and merge data. 
 
 The OD estimation was done in two level:
   1. Tower to tower OD estimation
