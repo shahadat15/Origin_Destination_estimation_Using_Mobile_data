@@ -3,7 +3,7 @@
 %Open the file
 fid=fopen('july15_order.csv');
 
- %this peart is to replace the string user ID with a real number
+ %this part is to replace the string user ID with a real number
 userIDStr=123456789;
 userID_vector=[];
 userID=0;
