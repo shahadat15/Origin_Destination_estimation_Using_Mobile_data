@@ -48,6 +48,9 @@ where temp1.UNIQ_ID = temp2.UNIQ_ID;
 alter table temp1 drop UNIQ_ID;
 
 
+
+
+/*
 #Separate data which has only one node assigned
 CREATE TABLE temp3 LIKE temp1;
 
@@ -73,7 +76,7 @@ drop table temp3;
 
 #separate the id wise rank data
 create table temp5(
-	UNIQ_ID varchar(18)
+	ID int
 	, node1 int not null 
 	, count1 int not null  
 	, node2 int not null 
@@ -82,13 +85,13 @@ create table temp5(
 	, count3 int not null  
 );
 
-insert into temp5(UNIQ_ID)
-select UNIQ_ID from temp4
-group by UNIQ_ID;
+insert into temp5(ID)
+select ID from temp4
+group by ID;
  
 update temp4, temp5
 set temp5.node1 = temp4.node1,temp5.count1 = temp4.count
-where(temp5.UNIQ_ID = temp4.UNIQ_ID);
+where(temp5.ID = temp4.ID);
 
 update temp4, temp5
 set temp5.node1 = temp4.node1,temp5.count1 = temp4.count
@@ -176,7 +179,7 @@ drop table temp7;
 #group by node1, ID
 #order by ID, time_second;
 
-
+*/
 
 
 
