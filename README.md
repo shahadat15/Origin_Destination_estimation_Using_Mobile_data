@@ -7,6 +7,6 @@ The OD estimation was done in two level:
   1. Tower to tower OD estimation
   2. Zone to zone (node to node) OD estimation
 
-This OD estimation was coded in Matlab first. Later the same code has been converted in cpp to make the process faster.
+This OD estimation was coded in Matlab.
 
 For more information about the work please read the published paper. (http://www.sciencedirect.com/science/article/pii/S0968090X14000059)
